@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">applemusic_clone</string>
+    <string name="bottom_nowRead">지금 듣기</string>
+    <string name="bottom_lookaround">둘러보기</string>
+    <string name="bottom_radio">라디오</string>
+    <string name="bottom_store">보관함</string>
+    <string name="bottom_search">검색</string>
+</resources>

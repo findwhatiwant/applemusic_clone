@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.nowread.nowreadFragment">
+    <LinearLayout
+        android:layout_marginTop="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:id="@+id/text_nowread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:fontFamily = "@font/pretendardregular"
+        android:textFontWeight="600"
+        android:text="지금 듣기" />
+
+        <TextView
+            android:id="@+id/best_recommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="27sp"
+            android:fontFamily = "@font/pretendardregular"
+            android:textFontWeight="600"
+            android:text="인기 추천곡" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    >
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13sp"
+                        android:fontFamily="@font/pretendardlight"
+                        android:text="아이브 팬에게 인기 있는 콘텐츠"/>
+                    <ImageView
+                        android:layout_width="200sp"
+                        android:layout_height="200sp"
+                        android:id="@+id/album1"
+                        android:src="@drawable/ivealbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="70sp"
+                        android:textAlignment="center"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="#FFFFFF"
+                        android:text="I AM\n아이브\n2023년"
+                        android:fontFamily="@font/pretendardregular"
+                        android:background="@drawable/textbackground"
+                        android:backgroundTint="#B4B4B4"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13sp"
+                        android:fontFamily="@font/pretendardlight"
+                        android:text="다시 듣기"/>
+
+                   <ImageView
+                        android:layout_width="200sp"
+                        android:layout_height="200sp"
+                        android:id="@+id/album2"
+                        android:src="@drawable/newjeansalbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="70sp"
+                        android:textAlignment="center"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="#FFFFFF"
+                        android:text="Get Up\nNewJeans\n2023년"
+                        android:fontFamily="@font/pretendardregular"
+                        android:background="@drawable/textbackground"
+                        android:backgroundTint="#4848C1"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp">
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="13sp"
+                        android:fontFamily="@font/pretendardlight"
+                        android:text="최신 발매"/>
+                    <ImageView
+                        android:layout_width="200sp"
+                        android:layout_height="200sp"
+                        android:id="@+id/album3"
+                        android:src="@drawable/thornapplealbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="70sp"
+                        android:textAlignment="center"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="#FFFFFF"
+                        android:text="동물 - EP\n쏜애플\n2023년"
+                        android:fontFamily="@font/pretendardregular"
+                        android:background = "@drawable/textbackground"
+                        android:backgroundTint="#718144"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/cozysong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="17dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="27sp"
+            android:fontFamily = "@font/pretendardregular"
+            android:textFontWeight="600"
+            android:text="편안한 음악" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:id="@+id/album4"
+                    android:src="@drawable/georgibensonalbum"/>
+                <TextView
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/pretendardlight"
+                    android:textSize="17dp"
+                    android:text="Give Me the Night"/>
+                <TextView
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendardlight"
+                    android:textSize="15dp"
+                    android:text="George Benson"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:id="@+id/album5"
+                        android:src="@drawable/meenoialbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="17dp"
+                        android:text="Cheek to Cheek"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="15dp"
+                        android:text="미노이 (meenoi)"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:id="@+id/album6"
+                        android:src="@drawable/coldealbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="17dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="또 새벽이 오면 (Feat. 백현 (BAEKHYUN))"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="15dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Colde(콜드)"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:id="@+id/anotherlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="17dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:fontFamily = "@font/pretendardregular"
+            android:textFontWeight="600"
+            android:text="아이브 팬이 즐겨 찾은 다른 항목" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:id="@+id/album7"
+                        android:src="@drawable/gidlealbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="17dp"
+                        android:text="I feel - EP"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="15dp"
+                        android:text="(여자)아이들"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:id="@+id/album8"
+                        android:src="@drawable/silicagelalbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="17dp"
+                        android:text="Tik Tak Tok"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="15dp"
+                        android:text="실리카겔"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:id="@+id/album9"
+                        android:src="@drawable/staycalbum"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="17dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Bubble"/>
+                    <TextView
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendardlight"
+                        android:textSize="15dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="STAYC"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"></TextView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

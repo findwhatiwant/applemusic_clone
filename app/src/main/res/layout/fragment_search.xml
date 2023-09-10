@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.search.searchFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_nowread"
+        android:layout_marginBottom="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40sp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:fontFamily = "@font/pretendardregular"
+        android:textFontWeight="600"
+        android:text="검색" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/top25button"
+            android:backgroundTint="@color/bottom_navColor"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:fontFamily="@font/pretendardregular"
+            android:id="@+id/edittext"
+            android:singleLine="true"
+            tools:ignore="MissingConstraints"
+            android:textColor="#D6D6D6"
+            android:text = "               아티스트, 노래, 가사 등"/>
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:src="@drawable/magnifyingglass"
+            android:tint="#E6E6E6"
+            app:layout_constraintLeft_toLeftOf="@+id/edittext"
+            app:layout_constraintTop_toTopOf="@+id/edittext"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="10sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="100sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/imgresultlayout">
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:id="@+id/imgviewinsearch"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/resultlayout"
+            android:orientation="vertical">
+            <TextView
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:fontFamily="@font/pretendardregular"
+            android:textSize="17sp"
+            android:id="@+id/textviewinsearch"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/pretendardregular"
+                android:textSize="17sp"
+                android:id="@+id/textviewinsearch2"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/pretendardregular"
+                android:textSize="17sp"
+                android:id="@+id/textviewinsearch3"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/pretendardregular"
+                android:textSize="17sp"
+                android:id="@+id/textviewinsearch4"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:fontFamily="@font/pretendardregular"
+                android:textSize="17sp"
+                android:id="@+id/textviewinsearch5"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

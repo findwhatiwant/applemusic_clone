@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="0sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/seoulimage"
+            android:src="@drawable/seoulcity"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/seoulimage"
+            app:layout_constraintLeft_toLeftOf="@id/seoulimage"
+            app:layout_constraintRight_toRightOf="@id/seoulimage"
+            android:layout_marginBottom="140sp"
+            android:fontFamily="@font/pretendardsemibold"
+            android:textFontWeight="600"
+            android:textSize="23sp"
+            android:text="오늘의 TOP 25: 서울"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/seoulimage"
+            app:layout_constraintLeft_toLeftOf="@id/seoulimage"
+            app:layout_constraintRight_toRightOf="@id/seoulimage"
+            android:layout_marginBottom="110sp"
+            android:fontFamily="@font/pretendardregular"
+            android:textFontWeight="600"
+            android:textSize="23sp"
+            android:text="Woosik Music"
+            android:textColor="#FFFFFF"/>
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="60sp"
+            app:layout_constraintBottom_toBottomOf="@+id/seoulimage"
+            app:layout_constraintLeft_toLeftOf="@id/seoulimage"
+            android:layout_marginBottom="45sp"
+            android:layout_marginLeft="40sp"
+            android:text="재생"
+            android:textSize="22sp"
+            android:fontFamily="@font/pretendardsemibold"
+            android:textColor="#F6F6F6"
+            android:background="@drawable/top25button"
+            android:backgroundTint="#282828"/>
+        <Button
+            android:layout_width="150sp"
+            android:layout_height="60sp"
+            android:text="임의 재생"
+            android:textSize="22sp"
+            android:fontFamily="@font/pretendardsemibold"
+            android:textColor="#F6F6F6"
+            app:layout_constraintBottom_toBottomOf="@+id/seoulimage"
+            app:layout_constraintRight_toRightOf="@id/seoulimage"
+            android:layout_marginBottom="45sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/top25button"
+            android:backgroundTint="#282828"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="@+id/seoulimage"
+                app:layout_constraintLeft_toLeftOf="@id/seoulimage"
+                app:layout_constraintRight_toRightOf="@id/seoulimage"
+                android:layout_marginBottom="10sp"
+                android:fontFamily="@font/pretendardregular"
+                android:textFontWeight="600"
+                android:textSize="16sp"
+                android:text="서울에서 지금 가장 인기 있는 음악. 매일 업데이트됩니다."
+                android:textColor="#878787"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/iptimagelayout"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ipttextlayout"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_nowRead">
+
+    <fragment
+        android:id="@+id/navigation_nowRead"
+        android:name="com.dayofmercury.applemusic.ui.nowread.nowreadFragment"
+        android:label="@string/bottom_nowRead"
+        tools:layout="@layout/fragment_nowread"/>
+
+    <fragment
+        android:id="@+id/navigation_lookaround"
+        android:name="com.dayofmercury.applemusic.ui.lookaround.lookaroundFragment"
+        android:label="@string/bottom_lookaround"
+        tools:layout="@layout/fragment_lookaround" />
+
+    <fragment
+        android:id="@+id/navigation_radio"
+        android:name="com.dayofmercury.applemusic.ui.radio.radioFragment"
+        android:label="@string/bottom_radio"
+        tools:layout="@layout/fragment_radio" />
+
+    <fragment
+        android:id="@+id/navigation_store"
+        android:name="com.dayofmercury.applemusic.ui.store.storeFragment"
+        android:label="@string/bottom_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.dayofmercury.applemusic.ui.search.searchFragment"
+        android:label="@string/bottom_search"
+        tools:layout="@layout/fragment_search" />
+
+</navigation>

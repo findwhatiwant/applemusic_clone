@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nowread"
+        android:icon="@drawable/playbutton"
+        android:title="@string/bottom_nowRead" />
+
+    <item
+        android:id="@+id/bottom_lookaround"
+        android:icon="@drawable/option"
+        android:title="@string/bottom_lookaround" />
+
+    <item
+        android:id="@+id/bottom_radio"
+        android:icon="@drawable/radioicon"
+        android:title="@string/bottom_radio" />
+
+    <item
+        android:id="@+id/bottom_store"
+        android:icon="@drawable/storeicon"
+        android:title="@string/bottom_store" />
+
+    <item
+        android:id="@+id/bottom_search"
+        android:icon="@drawable/magnifyingglass"
+        android:title="@string/bottom_search" />
+</menu>
